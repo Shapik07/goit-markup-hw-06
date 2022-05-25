@@ -79,9 +79,12 @@
             Заказать услугу
           </button>
         </div>
+
+        <!-- Модальное окно -->
+
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button type="button" class="close-modal-btn" data-modal-close>
+             <button type="button" class="close-modal-btn" data-modal-close>
               <svg class="close-icon-btn">
                 <use
                   href="./images/icon/icons.svg#icon-close"
@@ -90,6 +93,31 @@
                 ></use>
               </svg>
             </button>
+            <b class="modal-aplication">Оставьте свои данные, мы вам перезвоним</b>
+            <form class="aplication-form">
+              <label for="" class="form-name">
+                Имя
+                <input type="name" name="name">
+              </label>
+              <label for="tel" class="form-tel">
+                Телефон
+                <input type="text">
+              </label>
+              <label for="" class="form-mail">
+                Почта
+                <input type="text">
+              </label>
+              <label for="" class="form-comment">
+                Комментарий
+              <textarea name="comment" id="" rows="10"></textarea>
+            </label>
+            <label for="">
+              <p></p>
+              <a href=""></a>
+              <input type="checkbox">
+            </label>
+            </form>
+            <button type="submit">Отправить</button>
           </div>
         </div>
       </section>

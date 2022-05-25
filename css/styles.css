@@ -198,6 +198,8 @@ ul {
   transform: scale(1.1);
 }
 
+/* Модальное окно */
+
 .modal {
   position: absolute;
   height: 581px;
