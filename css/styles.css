@@ -332,6 +332,12 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.form-fiend:focus + .icon-form {
+  fill: #2196F3;
+  border-color: #2196F3;
+  outline: transparent;
+}
+
 .btn-submit:hover,
 .btn-submit:focus {
   background-color: #188ce8;
