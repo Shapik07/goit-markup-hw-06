@@ -42,6 +42,19 @@ p {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .site-nav .current {
   color: var(--focus-color-text);
 }
@@ -332,16 +345,49 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.form-fiend:focus + .icon-form {
+.form-fiend:focus + .icon-form,
+.form-fiend:hover + .icon-form {
   fill: #2196F3;
-  border-color: #2196F3;
   outline: transparent;
+}
+
+.form-fiend:focus,
+.form-fiend:hover,
+.comment-form:focus,
+.comment-form:hover {
+  border-color: #2196F3;
 }
 
 .btn-submit:hover,
 .btn-submit:focus {
   background-color: #188ce8;
 }
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  outline: 2px solid #212121;
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+
+.custom-checkbox-icon {
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+
+.checkbox-btn:checked + .custom-checkbox .custom-checkbox-icon {
+  opacity: 1;
+}
+
+.checkbox-btn:checked + .custom-checkbox {
+  outline-color: #2196F3;
+}
+
 
 /* Main */
 
