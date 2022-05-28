@@ -306,6 +306,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .form-fiend {
@@ -337,6 +338,10 @@ ul {
   color: #757575;
 }
 
+.conditions-link {
+  color: #2196F3;
+}
+
 .btn-submit {
   display: block;
   width: 200px;
@@ -346,7 +351,6 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  margin-bottom: 40px;
   background-color: #2196f3;
   color: #ffffff;
   border-radius: 4px;

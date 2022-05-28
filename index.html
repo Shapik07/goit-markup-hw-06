@@ -85,7 +85,7 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button type="button" class="close-modal-btn" data-modal-close>
-              <svg height="18px" width="18px">
+              <svg height="18" width="18">
                 <use href="./images/icon/icons.svg#icon-close"></use>
               </svg>
             </button>
@@ -96,21 +96,21 @@
               <label for="name" class="form-name">
                 Имя
                 <input type="name" name="name" class="form-fiend" id="name"/>
-                <svg width="18px" height="18px" class="icon-form">
+                <svg width="18" height="18" class="icon-form">
                   <use href="./images/icon/icons.svg#icon-person-form"></use>
                 </svg>
               </label>
               <label for="tel" class="form-tel">
                 Телефон
-                <input type="text" class="form-fiend" id="tel"/>
-                <svg width="18px" height="18px" class="icon-form">
+                <input type="text" class="form-fiend" name="tel" id="tel"/>
+                <svg width="18" height="18" class="icon-form">
                   <use href="./images/icon/icons.svg#icon-tel-form"></use>
                 </svg>
               </label>
               <label for="mail" class="form-mail">
                 Почта
-                <input type="text" class="form-fiend" id="mail"/>
-                <svg width="18px" height="18px" class="icon-form">
+                <input type="text" class="form-fiend" name="mail" id="mail"/>
+                <svg width="18" height="18" class="icon-form">
                   <use href="./images/icon/icons.svg#icon-mail-form"></use>
                 </svg>
               </label>
@@ -129,19 +129,21 @@
                   type="checkbox"
                   class="checkbox-btn visually-hidden"
                   id="checkbox"
+                  name="checkbox"
                 />
                 <span class="custom-checkbox">
-                  <svg width="16px" height="15px" class="custom-checkbox-icon">
+                  <svg width="16" height="15" class="custom-checkbox-icon">
                     <use href="./images/icon/icons.svg#icon-check"></use>
                   </svg>
                 </span>
                 <p class="conditions">
                   Соглашаюсь с рассылкой и принимаю
-                  <a href="">Условия договора</a>
+                  <a href="" class="conditions-link">Условия договора</a>
                 </p>
               </label>
+              <button type="submit" class="btn-submit">Отправить</button>
             </form>
-            <button type="submit" class="btn-submit">Отправить</button>
+            
           </div>
         </div>
       </section>
